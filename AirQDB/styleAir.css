@@ -1,0 +1,160 @@
+/* style.css - Універсальний стиль для будь-якої сторінки */
+
+/* --- 1. Скидання та Основа --- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; /* Гарантує, що padding і border не збільшують загальну ширину елемента */
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* Чистий і сучасний шрифт */
+  line-height: 1.6; /* Покращує читабельність тексту */
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7; /* Дуже світло-сірий фон */
+  color: #333;
+}
+
+/* --- 2. Типографіка та Заголовки --- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #2c3e50; /* Темний, майже чорний колір для заголовків */
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5em;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+}
+h2 {
+  font-size: 2em;
+}
+h3 {
+  font-size: 1.5em;
+}
+p {
+  margin-bottom: 1.2em;
+}
+
+/* --- 3. Посилання та Кнопки (базові) --- */
+a {
+  color: #3498db; /* Яскраво-синій для посилань */
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #2980b9;
+  text-decoration: underline;
+}
+
+/* Стиль для елементів, які можуть виступати як кнопки */
+.button,
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #e74c3c; /* Привабливий червоний колір */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.1s;
+}
+
+.button:hover,
+button:hover {
+  background-color: #c0392b;
+  transform: translateY(-1px);
+}
+
+/* --- 4. Контейнер та Макет --- */
+.container {
+  max-width: 1100px; /* Обмежує ширину контенту */
+  margin: 0 auto; /* Центрує контент по горизонталі */
+  padding: 20px;
+}
+
+/* --- 5. Зображення та Медіа --- */
+img {
+  max-width: 100%; /* Гарантує, що зображення не виходять за межі батьківського елемента */
+  height: auto;
+  display: block;
+  margin: 15px 0;
+  border-radius: 8px; /* Заокруглені кути для зображень */
+}
+
+/* --- 6. Списки та Таблиці --- */
+ul,
+ol {
+  margin-left: 20px;
+  padding-left: 0;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #bdc3c7;
+  color: #2c3e50;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* --- 7. Елемент PRE (як у вашому HTML) та Code --- */
+pre,
+code {
+  background-color: #cad4fc; /* Світлий фон для коду */
+  padding: 10px;
+  border-radius: 5px;
+  overflow-x: auto; /* Дозволяє прокручувати довгі рядки коду */
+  font-family: "Consolas", "Courier New", monospace;
+  color: #333;
+  border-color: #2980b9;
+  border-width: 2px;
+  border-style: solid;
+  max-width: 1000px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+code {
+  padding: 2px 4px;
+  font-size: 0.9em;
+}
+
+/* --- 8. Адаптивність (Responsive) --- */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px; /* Збільшуємо базовий розмір шрифту на мобільних пристроях */
+  }
+  .container {
+    padding: 10px;
+  }
+}

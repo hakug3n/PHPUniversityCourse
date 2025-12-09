@@ -1,0 +1,26 @@
+[
+  {
+    "city": "Berlin",
+    "country": "Germany",
+    "flag": "https://flagcdn.com/w320/de.png",
+    "filename": "berlin.json.csv"
+  },
+  {
+    "city": "London",
+    "country": "United Kingdom",
+    "flag": "https://flagcdn.com/w320/gb.png",
+    "filename": "london.json.csv"
+  },
+  {
+    "city": "Paris",
+    "country": "France",
+    "flag": "https://flagcdn.com/w320/fr.png",
+    "filename": "paris.json.csv"
+  },
+  {
+    "city": "Madrid",
+    "country": "Spain",
+    "flag": "https://flagcdn.com/w320/es.png",
+    "filename": "madrid.json.csv"
+  }
+]
