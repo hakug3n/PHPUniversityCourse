@@ -1,17 +1,5 @@
 <?php
 
-
-// $data = [];
-// if (($handle = fopen('C:\xampp\htdocs\php\AirQualityDataBrowser\data\berlin.json.csv', 'r')) !== false) {
-//     $headers = fgetcsv($handle, 1000, ',');
-
-//     while (($row = fgetcsv($handle, 1000, ',')) !== false) {
-//         $data[] = array_combine($headers, $row);
-//     }
-//     fclose($handle);
-// }
-
-// var_dump($data);
 ?>
 <?php require   'views/header.inc.php'; ?>
 
@@ -25,5 +13,6 @@
     </a></li>
           
      <?php endforeach; ?>
+
 
 <?php require   'views/footer.inc.php'; ?>
