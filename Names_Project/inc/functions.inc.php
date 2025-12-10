@@ -15,11 +15,6 @@ function render($view, $params) {
     require __DIR__ . '/../views/layouts/main.view.php';
 }
 
-/**
- * This function will generate all the letters of the alphabet as 
- * an array: 
- * ['A', 'B', 'C', ... , 'X', 'Y', 'Z']
- */
 function gen_alphabet() {
     $A = ord('A');
     $Z = ord('Z');
