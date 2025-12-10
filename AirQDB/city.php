@@ -52,13 +52,7 @@
     // var_dump($data[0]['datetimeLocal']);
     // echo '</pre>';
  }
-    //  echo '<pre>';
-    // echo 'Filename: ' . $filename . "\n";
-    // echo 'City: ' . $city . "\n";
-    // echo 'Data:' . "\n";
-    // echo var_dump($data);
-    // echo '</pre>';
- 
+
 ?>
 <div id="chartContainer" style="width: 80%; height: 400px; margin: auto;">
     <canvas id="myChart"></canvas>
@@ -136,4 +130,5 @@
                             }
                         }
                     );
+
                 </script>
