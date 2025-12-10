@@ -1,5 +1,4 @@
 <?php
-
 require __DIR__ . '/inc/functions.inc.php';
 require __DIR__ . '/inc/db-connect.inc.php';
 
@@ -8,10 +7,6 @@ date_default_timezone_set('Europe/Berlin');
 $perPage = 3;
 $page = (int) ($_GET['page'] ?? 1);
 if ($page < 1) $page = 1;
-
-// $page = 1, $offset => 0
-// $page = 2, $offset => $perPage
-// $page = 3, $offset => $perPage * 2
 $offset = ($page - 1) * $perPage;
 
 $stmtCount = $pdo->prepare('SELECT COUNT(*) AS `count` FROM `entries`');
